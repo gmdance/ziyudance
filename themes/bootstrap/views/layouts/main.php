@@ -11,12 +11,14 @@
 <body>
 <?php $this->widget('bootstrap.widgets.TbNavbar',array(
     'type'=>'inverse',
-    'brand' => '子予舞蹈',
+    'brand' => 'ziyu',
     'items'=>array(
         array(
             'class'=>'bootstrap.widgets.TbMenu',
             'items'=>array(
-                array('label'=>'公司介绍', 'url'=>array('/site/index')),
+                array('label'=>'intro', 'url'=>array('/site/index')),
+                array('label'=>'music', 'url'=>array('/site/music')),
+                array('label'=>'connect', 'url'=>array('/site/index')),
                 /*
                 array('label'=>'About', 'url'=>array('/site/page', 'view'=>'about')),
                 array('label'=>'Contact', 'url'=>array('/site/contact')),
@@ -29,16 +31,9 @@
 )); ?>
 
 <div class="container" id="page">
-	<div class="hero-unit" id="logo"><img src=<?php echo Yii::app()->baseUrl . '/../static/logo.jpg'?> alt=""/>
-		<span id="introduction">简介</span>
-	</div>
-	<?php echo $content; ?>
-
-	<div class="clear"></div>
-
-	<div id="footer">
-	</div><!-- footer -->
-
+    <?php echo $content; ?>
+    <div id="footer">
+    </div><!-- footer -->
 </div><!-- page -->
 
 </body>

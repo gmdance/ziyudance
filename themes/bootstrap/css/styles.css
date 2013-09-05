@@ -1,9 +1,24 @@
+body {
+    overflow: no-display;   
+}
 #page {
-    padding-top: 60px;
+    padding-top: 45px;
+    width: 1024px;
+}
+.sidebar {
+    float: right;
+    width: 100px;
 }
 
 #logo {
-	padding: 0px;
-	background-color: #ffffff;
-	width: 1200px;
+    margin-bottom: 5px;
+}
+
+#content {
+    width: 1024px;
+    padding-top: 0px;
+    height: 500px;
+/*    background: #eeeeee;*/
+    border-radius: 6px;
+
 }
